@@ -1,0 +1,102 @@
+<html>
+<head>
+	<title>Rock, Paper and Scissors</title>
+
+	<meta charset="utf-8"> 
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+
+	<!-- Latest compiled JavaScript -->
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+	
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script src="js/script.js"></script>
+</head>
+<body>
+
+	<div class = "container-fluid">
+		<h1>Lets Play Rock-Paper-Scissors!!!</h1>
+	
+	
+	
+		<div class="row">
+			<div class="col-md-4"></div>
+			<div class="col-md-4"><h3>Please make a Selection</h3></div>
+			<div class="col-md-4"></div>
+		</div>
+	
+	
+	    <div class = "container-fluid">
+		<div class="row">
+			<div class="col-md-4">
+				<div class="image1"><img class="img-responsive" src="images/rock.png" style="width:200px; height:200px;"></div>
+
+				<div class="button1"><button id="Rock" onclick="getResult(this.id)" style="width:100px; height:30px; font-size:15px;">Rock</button></div>
+				
+			</div>
+
+			<div class="col-md-4">
+				<div class="image2"><img class="img-responsive" src="images/paper.png" style="width:200px; height:200px;"></div>
+
+				<div class="button2"><button id="Paper" onclick="getResult(this.id)" style="width:100px; height:30px; font-size:15px;">Paper</button></div>
+				
+			</div>
+
+			<div class="col-md-4">
+				<div class="image3"><img class="img-responsive" src="images/scissor.png" style="width:200px; height:210px;"></div>
+
+				<div class="button3"><button id="Scissor" onclick="getResult(this.id)" style="width:100px; height:30px; font-size:15px;">Scissor</button></div>
+				
+			</div>
+		</div>
+	</div>
+		
+
+        <div class = "container-fluid">
+    	<div class="row">
+    		<div class="col-md-4">
+    			<div id="user_selection">
+    				<p><b>You Played : </b></p>
+    			</div>
+    			<div id="user_value"></div>
+    		</div>
+
+    		<div class="col-md-4"></div>
+
+    		<div class="col-md-4">
+    			<div id="computer_selection">
+    				<p><b>Computer Played :</b></p>
+    			</div>
+    			<div id="computer_value"></div>
+    		</div>
+    	</div>
+    </div>
+    
+	 
+    	<div class="row">
+    		<div class="col-md-4"></div>
+    		<div class="col-md-4"><div id="result"></div></div>
+    		<div class="col-md-4"></div>
+    	</div>
+    	
+   	
+		<div class="row">
+			<div class="col-md-4"></div>
+			<div class="col-md-4">
+				<div id="new-game">
+					<button id="newgame" onclick="reloadPage()" style="width:100px; height:30px; font-size:15px;">New Game</button>
+				</div>
+			</div>
+			<div class="col-md-4"></div>
+		</div>
+	
+	</div>
+
+	
+</body>
+</html>
